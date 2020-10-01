@@ -52,13 +52,12 @@ Hints:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 
 Solution:
-def fact(x):
-    if x == 0:
-        return 1
-    return x * fact(x - 1)
+num=8
+x=1
 
-x=int(raw_input())
-print fact(x)
+for i in range(1,num+1):
+	x=i*x
+print(x)
 #----------------------------------------#
 
 #----------------------------------------#
@@ -77,12 +76,13 @@ In case of input data being supplied to the question, it should be assumed to be
 Consider use dict()
 
 Solution:
-n=int(raw_input())
-d=dict()
-for i in range(1,n+1):
-    d[i]=i*i
+n=8
+k={}
+for i in range(1,n):
+	k.update({i:i*i})
 
-print d
+print(k)
+
 #----------------------------------------#
 
 #----------------------------------------#
@@ -102,11 +102,17 @@ In case of input data being supplied to the question, it should be assumed to be
 tuple() method can convert list to tuple
 
 Solution:
-values=raw_input()
-l=values.split(",")
-t=tuple(l)
-print l
-print t
+l=[]
+t=()
+for i in range(5):
+	my_num=int(input(print("hey type ur number i, will convert it into list and tuple")))
+	l.append(my_num)
+print(tuple(l))
+
+
+
+print(l)
+print()
 #----------------------------------------#
 
 #----------------------------------------#
